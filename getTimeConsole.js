@@ -7,10 +7,12 @@ let getTimeConsole = () => {
 	let minutes = date.getMinutes();
 	let seconds = date.getSeconds();
 	
-	return hours + ":" + minutes + ":" + seconds;
+	let format = (num) => num > 10 ? num : num + "0";
+	
+	return format(hours) + ":" + format(minutes) + ":" + format(seconds);
 }
 
-getTimeConsole();
+console.log( getTimeConsole() );
 
 setInterval( () => {
 	let time = getTimeConsole();
