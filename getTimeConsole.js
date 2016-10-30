@@ -12,7 +12,7 @@ let getTimeConsole = () => {
 	
 	let format = (num) => num > 10 ? num : num + "0";
 	
-	return `${format(hours)}:${format(minutes)}:${format(seconds)}`;
+	return `${ format(hours) }:${ format(minutes) }:${ format(seconds) }`;
 }
 
 console.log( getTimeConsole() );
