@@ -1,3 +1,5 @@
+"use strict";
+
 let getTimeConsole = () => {
 	
 	let date = new Date();
@@ -15,8 +17,8 @@ setInterval( () => {
 	console.clear();
 	console.log( time );
 	
-	setTimeout ( ( () => { 
+	setTimeout ( () => { 
 		console.clear();
 		console.log( time.replace(/:/g, " " ) ) 
-		}), 500 );
-	}, 1000);
+	}, 500 );
+}, 1000);
